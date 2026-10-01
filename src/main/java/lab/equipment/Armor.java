@@ -15,6 +15,12 @@ public class Armor extends Equipment {
         return "Armor";
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", Defense: %d, Body Part: %s", 
+                defense, bodyPart);
+    }
+
     public int getDefense() {
         return defense;
     }

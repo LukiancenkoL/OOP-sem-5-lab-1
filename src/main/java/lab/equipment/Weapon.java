@@ -15,6 +15,12 @@ public class Weapon extends Equipment {
         return "Weapon";
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", Damage: %d, Two-Handed: %s", 
+                damage, isTwoHanded ? "Yes" : "No");
+    }
+
     public int getDamage() {
         return damage;
     }

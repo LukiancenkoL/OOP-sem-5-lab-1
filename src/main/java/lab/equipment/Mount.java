@@ -15,6 +15,12 @@ public class Mount extends Equipment {
         return "Mount";
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", Speed: %d, Breed: %s", 
+                speed, breed);
+    }
+
     public int getSpeed() {
         return speed;
     }
