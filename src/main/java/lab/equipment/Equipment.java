@@ -1,20 +1,43 @@
 package lab.equipment;
 
-public class Equipment {
-    private int cost;
-    private int amount;
+public abstract class Equipment {
+    private String name;
     private int weight;
+    private int price;    
 
-    public int getCost() {
-        return cost;
+    public Equipment(String name, int weight, int price) {
+        this.name = name;
+        this.weight = weight;
+        this.price = price;
     }
 
-    public int getAmount() {
-        return amount;
+    public abstract String getEquipmentType();
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getWeight() {
         return weight;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%s] %s - Weight: %d kg, Price: %d silver coins", 
+                getEquipmentType(), name, weight, price);
     }
 
 }
