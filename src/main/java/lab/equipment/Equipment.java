@@ -36,7 +36,7 @@ public abstract class Equipment {
 
     @Override
     public String toString() {
-        return String.format("[%s] %s - Weight: %d kg, Price: %d silver coins", 
+        return String.format("[%s] %s - Weight: %d kg, Price: %d coins", 
                 getEquipmentType(), name, weight, price);
     }
 

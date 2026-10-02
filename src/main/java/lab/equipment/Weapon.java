@@ -1,12 +1,10 @@
 package lab.equipment;
 
 public class Weapon extends Equipment {
-    private int damage;
     private boolean isTwoHanded;
 
-    public Weapon(String name, int weight, int price, int damage, boolean isTwoHanded) {
+    public Weapon(String name, int weight, int price, boolean isTwoHanded) {
         super(name, weight, price);
-        this.damage = damage;
         this.isTwoHanded = isTwoHanded;
     }
 
@@ -17,12 +15,8 @@ public class Weapon extends Equipment {
 
     @Override
     public String toString() {
-        return super.toString() + String.format(", Damage: %d, Two-Handed: %s", 
-                damage, isTwoHanded ? "Yes" : "No");
-    }
-
-    public int getDamage() {
-        return damage;
+        return super.toString() + String.format(", Two-Handed: %s",
+                isTwoHanded ? "Yes" : "No");
     }
 
     public boolean isTwoHanded() {

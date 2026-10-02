@@ -1,6 +1,6 @@
-Type,Name,Weight,Price,Attr1,Attr2
-Weapon,Excalibur,4,150,120,true
-Armor,Heavy Chestplate,20,500,80,Chest
-Armor,Iron Helmet,5,15,40,Head
-Mount,Warhorse,450,80,60,Destrier
-Weapon,Dagger,1,50,15,false
+Type,Name,Weight,Price,Attr2
+Weapon,Excalibur,4,150,true
+Armor,Heavy Chestplate,20,50,Chest
+Armor,Iron Helmet,15,25,Head
+Mount,Warhorse,450,80,Destrier
+Weapon,Spear,2,22,true

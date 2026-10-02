@@ -31,18 +31,15 @@ public class EquipmentFileReader {
                 switch (type) {
                     case "WEAPON":
                         equipmentList.add(new Weapon(name, weight, price,
-                                Integer.parseInt(data[4].trim()),
-                                Boolean.parseBoolean(data[5].trim())));
+                                Boolean.parseBoolean(data[4].trim())));
                         break;
                     case "ARMOR":
                         equipmentList
-                                .add(new Armor(name, weight, price,
-                                        Integer.parseInt(data[4].trim()), data[5].trim()));
+                                .add(new Armor(name, weight, price, data[4].trim()));
                         break;
                     case "MOUNT":
                         equipmentList
-                                .add(new Mount(name, weight, price,
-                                        Integer.parseInt(data[4].trim()), data[5].trim()));
+                                .add(new Mount(name, weight, price, data[4].trim()));
                         break;
                 }
             }
