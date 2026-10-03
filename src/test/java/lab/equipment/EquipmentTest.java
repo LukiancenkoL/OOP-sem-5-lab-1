@@ -30,4 +30,21 @@ class EquipmentTest {
         assertEquals("Test Breed", mount.getBreed());
         assertEquals("[Mount] Test Mount - Weight: 500 kg, Price: 100 coins, Breed: Test Breed", mount.toString());
     }
+
+    @Test
+    void testEquipmentGettersAndSetters() {
+        Equipment item = new Weapon("Test Sword", 2, 50, false);
+
+        assertEquals("Test Sword", item.getName());
+        assertEquals(2, item.getWeight());
+        assertEquals(50, item.getPrice());
+
+        item.setName("New Test Sword");
+        item.setWeight(3);
+        item.setPrice(200);
+
+        assertEquals("New Test Sword", item.getName());
+        assertEquals(3, item.getWeight());
+        assertEquals(200, item.getPrice());
+    }
 }
